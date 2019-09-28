@@ -55,7 +55,7 @@
 5. Docker Connector
     * Run the following command from `independent.study/testing/`
         ```
-            opunit verify docker_test
+            sudo opunit verify docker_test
         ```
 
 ## Testing your local machine using a profile
