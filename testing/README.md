@@ -23,7 +23,7 @@
 1. Make sure that you are currently in the directory `independent.study/testing`
 2. Run the command:
     ```
-    opunit verify -i inventory.yml
+    sudo opunit verify -i inventory.yml
     ```
 
 ## Testing Individual Connectors
