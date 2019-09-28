@@ -69,10 +69,10 @@
           cmd: mysql --version
           range: ^5.x.x
      - timezone: EST
-     - availability:
-         port: 3000
-         status: 200
-         url: /
-         setup:
-             cmd: baker run serve
-             wait_for: Started Application
+    #  - availability:
+    #      port: 3000
+    #      status: 200
+    #      url: /
+    #      setup:
+    #          cmd: baker run serve
+    #          wait_for: Started Application

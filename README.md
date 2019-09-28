@@ -1,4 +1,4 @@
-# independent.study
+# CSC: 630
 
 ## Setup
 

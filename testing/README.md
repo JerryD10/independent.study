@@ -13,8 +13,11 @@
     baker bake
     ```
 3. Setup Docker
-4. Setup Slim
-
+    ```
+    cd docker
+    sudo docker build -tag=dockertesttag .
+    sudo docker run -d --name docker_test -p4000:80 dockertesttag
+    ```
 ## Testing using Inventory file
 
 1. Make sure that you are currently in the directory `independent.study/testing`
@@ -35,7 +38,7 @@
         ```
             opunit verify -c ../test/opunit.yml
         ```
-    * You can also run the following command
+    * You can also run the following command _(Note: The following command can be run from another directory too. Just make sure the path to the checks file is modified.)_
         ```
             opunit verify vagrant_test -c ../test/opunit.yml
         ```
@@ -49,5 +52,14 @@
         ```
             opunit verify local
         ```
-5. 
+5. Docker Connector
+    * Run the following command from `independent.study/testing/`
+        ```
+            opunit verify docker_test
+        ```
 
+## Testing your local machine using a profile
+1. Use can use a [profile](https://github.com/CSC-DevOps/profile) to test your local machine
+    ```
+        opunit profile CSC-DevOps/profile:519.yml
+    ```

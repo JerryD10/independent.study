@@ -5,4 +5,6 @@
     private_key: vagrant/.vagrant/machines/vagrant_test/virtualbox/private_key
 - baker:
   - name: baker-test
-    target: ~/IS/Dev/
+    target: baker/
+- docker:
+  - name: docker_test
