@@ -15,7 +15,7 @@
 3. Setup Docker
     ```
     cd docker
-    sudo docker build -tag=dockertesttag .
+    sudo docker build -t=dockertesttag .
     sudo docker run -d --name docker_test -p4000:80 dockertesttag
     ```
 ## Testing using Inventory file
