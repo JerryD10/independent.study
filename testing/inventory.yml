@@ -1,0 +1,8 @@
+- vagrant:
+  - name: vagrant_test
+- ssh:
+  - target: vagrant@192.168.33.100
+    private_key: vagrant/.vagrant/machines/vagrant_test/virtualbox/private_key
+- baker:
+  - name: baker-test
+    target: ~/IS/Dev/

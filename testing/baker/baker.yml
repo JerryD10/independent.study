@@ -1,0 +1,9 @@
+---
+name: baker-test
+vm:
+  ip: 192.168.22.22
+  ports: 8000
+lang:
+  - nodejs9
+commands:
+  serve: cd /baker-test/deployment/express && npm install && node index.js
