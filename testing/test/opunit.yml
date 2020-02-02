@@ -43,7 +43,7 @@
    checks:
      - capability:
          memory: 4
-         cores: 2
+         cores: 4
          virtualization: true
      - version:
          cmd: baker --version
